@@ -12,15 +12,15 @@ function generateArray(){
 }
 generateArray();
 
-function calcStat(){
-    for (let i =0;i<a.length;i++){
-        if (stat[a[i]]){
-            stat[a[i]]++;
+function calcStat(arr){
+    for(let k of arr){
+        if(stat[k]){
+            stat[k]++;
         }
-        else {
-            stat[a[i]] =1;
+        else{
+            stat[k]=1;
         }
     }
     return stat;
 }
-console.log(calcStat());
+console.log(calcStat(a));
